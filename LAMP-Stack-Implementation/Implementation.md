@@ -1,4 +1,4 @@
-## _LAMP STACK IMPLEMENTATION_ :penguin: :feather: :dolphin: :elephant:
+# _LAMP STACK IMPLEMENTATION_ :penguin: :feather: :dolphin: :elephant:
 LAMP stack is a collection of technologies which allows the creation and delivery of web applications or websites. The LAMP stack consists of Linux, Apache, MYSQL and PHP, all these tools are free and Open-Source tools. I will be implementing this LAMP stack using an AWS EC2 instance of Ubuntu Linux
 
 ### STEP 1: Create an EC2 instance on AWS
@@ -15,6 +15,8 @@ _**Screenshot below**_
 
 
 - Once instance has successfully been created, connect to instance.
+
+#### _Instance successfully created and connected to. :heavy_check_mark:_
 
 ### STEP 2: Update OS and install Apache Web Server
 - Run:
@@ -55,4 +57,54 @@ _**Screenshot below**_
 ![Apache is working!](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/check%20apache%20on%20web%20browser.png)
 
 
-### STEP 3: Install 
+#### _Apache successfully installed :heavy_check_mark:_
+
+
+### STEP 3: Install MYSQL
+- Install MYSQL
+```
+sudo apt install mysql-server
+```
+
+_**Screenshot below**_
+![mysql server](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/install%20mysql-server.png)
+
+
+- Use _mysql_secure_installation_ script to secure mysql server, this comes installed with MYSQL
+```
+sudo mysql_secure_installation
+```
+
+_**Screenshot below**_
+![mysql script run](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/mysql%20secure%20install%20attempt.png)
+
+### :triangular_flag_on_post: COMMON ERROR
+- :triangular_flag_on_post: Sometimes when running this script, an error is thrown when trying to create root password.
+
+_**Screenshot below**_
+![mysql script error](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/mysql%20secure%20error.png)
+
+- :triangular_flag_on_post: To solve this issue login to mysql using ```sudo mysql``` and query:
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'EnterSecurePassword'
+```
+
+_**Screenshot below**_
+![resolve mysql secure error](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/mysql%20reslove%20error.png)
+
+
+- :triangular_flag_on_post: run ```exit``` query to exit mysql. mysql_secure_installation script should be working without error now.
+
+_**Screenshot below**_
+![mysql script works successfully](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/proof%20error%20has%20been%20resolved.png)
+
+
+- Login to mysql using the password created and then exit mysql
+```
+sudo mysql -u root -p
+```
+
+_**Screenshot below**_
+![access mysql and exit](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/log%20in%20and%20exit%20mysql.png)
+
+#### _MYSQL successfully installed :heavy_check_mark:_
