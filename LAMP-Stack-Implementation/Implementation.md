@@ -29,6 +29,7 @@ _**Screenshot below**_
 ![update system](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/update%20system.png)
 
 
+- Apache is a Web Server which is what actually hosts our web application or website
 - Install Apache Web Server:
 ```
 sudo apt install apache2
@@ -61,6 +62,7 @@ _**Screenshot below**_
 
 
 ### STEP 3: Install MYSQL
+- MYSQL is a database for our web application or website
 - Install MYSQL
 ```
 sudo apt install mysql-server
@@ -120,3 +122,11 @@ sudo apt install php libapache2-mod-php php-mysql
 
 _**See Screenshot Below**_
 ![install php](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/install%20php.png)
+
+### Stack successfully implemented :heavy_check_mark:
+
+### STEP 5: Test Setup
+- To test setup with PHP script setup a virtual host to hold the website files
+- Goal is to setup a domain called _testProject_
+- add directory ```/var/www/testProject``` where website will serve documents from.
+```
