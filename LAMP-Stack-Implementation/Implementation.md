@@ -104,7 +104,19 @@ _**Screenshot below**_
 sudo mysql -u root -p
 ```
 
-_**Screenshot below**_
+_**See Screenshot Below**_
 ![access mysql and exit](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/log%20in%20and%20exit%20mysql.png)
 
 #### _MYSQL successfully installed :heavy_check_mark:_
+
+### STEP 4: Install PHP
+- PHP is a scripting language as well as a runtime which will process code to display content to the end user
+- The server will need a module php-mysql which allows PHP communication with mysql database
+- libapache2-mod-php package is needed to allow Apache to handle PHP files
+- To install these packages run:
+```
+sudo apt install php libapache2-mod-php php-mysql
+```
+
+_**See Screenshot Below**_
+![install php](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/install%20php.png)
