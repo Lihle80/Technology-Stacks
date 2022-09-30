@@ -48,7 +48,7 @@ sudo systemctl status apache2
 ```
 
 _**See Screenshot below**_
-![start and check Apache status](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/install%20apache2.png)
+![start and check Apache status](https://github.com/Lihle80/Technology-Stacks/blob/main/LAMP-Stack-Implementation/Images/start%20and%20check%20status%20apache.png)
 
 
 - Copy Public IP of instance and paste it as url to internet browser to check if Apache is really working.
